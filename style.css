@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_grid {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    display: none;
+}
+
+header {
+    background-color: #1E1C21;
+    height: 80px;
+}
+
+.cabecalho_alinhamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: red;
+    scale: 1.1;
+}
+
+.barras {
+    display: none;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.barras:hover {
+    color: #C31616;
+    zoom: 250%;
+}
+
+/* ----------------------------------- Banner Principal-----------------------------------------------------*/
+
+.banner {
+    
+    height: 550px;
+    background-size: cover;
+}
+
+.banner_f1 {
+    background-image: url(/img/ImagemBanner.png);
+}
+
+.banner_tlou {
+    background-image: url(/img/Banner_tlou.png);
+}
+
+.banner_lol {
+    background-image: url(/img/Banner_lol.png);
+}
+
+.posicao_texto {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+
+.texto_banner {
+    color: white;
+    text-align: center;
+}
+
+.texto_banner span {
+    color: white;
+    font-size: 80px;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.texto_banner p {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-bottom: 90px;
+}
+
+.texto_banner a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: #C31616;
+    padding: 20px 35px;
+    border-radius: 10px;
+}
+
+.texto_banner a:hover {
+    color: black;
+
+}
+
+
+/* ----------------------------------- Game Sections ------------------------------------------------------*/
+
+.ofertas {
+    background-color: rgba(30, 28, 33, 1);
+    padding: 20px 0px;
+}
+
+h2 {
+    color: white;
+}
+
+.secao_jogos {
+    background-color: black;
+}
+
+.linha_jogos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.secao_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 215px;
+    margin: 20px;
+    box-shadow: 0 0 30px black;
+    background: linear-gradient(to right, var(--cores-decantes));
+    z-index: 999;
+    animation: coresDancantes 2s linear infinite;
+    color: white;
+}
+
+@keyframes coresDancantes {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+    background-color: #C31616;
+    padding: 8px 20px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.card *:not(:first-child){
+    margin: 8px 12px;
+}
+
+/* -------------------------------------------------Banner down---------------------------------------------*/
+
+.banner_bottom {
+    background-image: url(/img/bannerdown.png);
+    background-size: cover;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Roboto', sans-serif;
+    height: 500px;
+    
+}
+
+.black_background {
+    background-image: url(/img/black_background.png);
+    background-size: cover;
+    height: 500px;
+}
+
+.alinhamento_banner_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_banner_bottom {
+    text-align: center;
+    padding-top: 100px;
+    width: 550px;
+    margin-left: 40px;
+}
+
+.text_banner_bottom span {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.text_banner_bottom p {
+    font-size: 15px;
+    padding-top: 15px;
+    text-align: justify;
+}
+
+.banner_bottom_image {
+    margin-top: 12px;
+}
+
+.leia_mais {
+    display: none;
+}
+
+/*-------------------------------------Footer----------------------------------------*/
+
+footer {
+    background-color: rgba(1, 1, 1, 1);
+}
+
+.rodape {
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.links_footer {
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+.alinhamento_footer_links {
+    padding: 15px;
+}
+
+
+.links_footer a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Titillium Web", sans-serif;
+    
+}
+
+.links_footer a:hover {
+    color: #C31616;
+
+}
+
+footer .logo {
+    width: 250px;
+    height: 30px;
+    margin-top: 100px;
+
+}
+
+.info_contato {
+    color: rgba(255, 255, 255, 1);
+    padding-top: 25px;
+    font-size: 16px; 
+}
+
+.form {
+    font-size: 0;
+}
+
+.form input {
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Titillium Web';
+}
+
+.form button {
+    width: 156px;
+    height: 45px;
+    background-color: rgba(0, 31, 112, 1);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Titillium Web';
+}
+
+.form button:hover {
+    background-color: #C31616;
+
+}
+
+.siganos {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    align-items: center;
+}
+
+.siganos h2 {
+    font-family: 'Titillium Web';
+    font-size: 23px;
+}
+
+
+
+
+/* ----------------------------------- Media ------------------------------------------------------*/
+
+@media screen and (max-width: 1100px) {
+    
+    .menu a {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 220px;
+        margin-right: 20px;
+    }
+
+    .text_banner_bottom span {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .text_banner_bottom {
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .banner_bottom_image {
+        margin-top: 0px;
+        width: 350px;
+        height: 500px;
+    }    
+
+    .alinhamento_footer_links {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .links_footer a {
+        font-size: 15px;        
+    }
+
+    .links_footer h2 {
+        font-size: 20px;        
+    }
+
+
+    footer .logo {
+        width: 180px;
+        height: 20px;
+        margin-top: 100px;
+    }
+
+    .form input {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        font-family: 'Titillium Web';
+    }
+    
+    .form button {
+        width: 100px;
+        height: 45px;
+        font-size: 15px;
+    }
+    
+    .siganos {
+        margin: 0px;
+        margin-top: 5px;
+    }
+
+    .siganos h2 {
+        font-size: 15px;
+    }
+
+    .siganos img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho_alinhamento {
+        position: relative;
+
+    }
+   
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        width: 130px;
+        top: 70px; 
+        background-color:#f6f5f8de;
+        border-radius: 10px;
+    }
+
+    .menu a {
+        margin: 10px;
+        text-align: end;
+        color: #1E1C21;
+        font-weight: bolder;
+        
+    }
+
+    .barras {
+        display: flex;
+    }
+    .banner_bottom_image {
+        display: none;
+        
+    }  
+
+    .text_banner_bottom {
+        width: 400%;
+        margin: 0%;
+        padding-top: 20%;
+        height: inherit;
+        
+    }
+
+    .text_banner_bottom span {
+        font-size: 30px ;
+        
+    }
+    
+    .text_banner_bottom p {
+        font-size: 16px ;
+    }
+
+    .leia_mais {
+        display: flex;
+    }
+
+    .leia_mais a {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    }
+    
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .links_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        font-size: 25px;
+
+    }
+
+    .links_footer h2 {
+        font-size: 35px; 
+        padding-top: 0px;
+        margin: 0px;   
+    }
+
+    footer .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+    }
+
+    .info_contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form input {
+        width: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .form button {
+        width: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .siganos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .siganos_link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around   ;
+        width: 300px;
+    }
+
+}

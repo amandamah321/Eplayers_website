@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./JS/jquery-3.6.1.js" defer></script>
+
+    <script src="./JS/script.js" defer></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://kit.fontawesome.com/a38684daa8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>E-players</title>
+  </head>
+  <body onload="renderizarProdutos()">
+    <h1>Home - E-Players</h1>
+    <header>
+      <div class="container_grid cabecalho_alinhamento">
+        <a href="./index.html"
+          ><img class="logo" src="./img/e_playerslogo.png" alt="logo"
+        /></a>
+        <nav id="menu" class="menu">
+          <a href="#">Inicio</a>
+          <a href="#">Horários</a>
+          <a href="#">Campeonato</a>
+          <a href="#">Resultados</a>
+          <a href="#">Notícias</a>
+          <a href="#">Login</a>
+        </nav>
+        <a onclick="mostrarMenu()" class="barras" href="">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <section class="banner banner_f1">
+      <div class="container_grid posicao_texto">
+        <div class="texto_banner">
+          <span>Liga E-players</span>
+          <p>Maior plataforma de campeonatos online</p>
+          <a href="#">Inscreva-se</a>
+        </div>
+      </div>
+    </section>
+    <div class="secao_jogos">
+      <div class="linha_jogos container">
+        <a href="#"><img src="./img/f1.png" alt="logo formula1" /></a>
+        <a href="#"><img src="./img/lol.png" alt="logo league of legends" /></a>
+        <a href="#"><img src="/img/counter.png" alt="logo counter strike" /></a>
+        <a href="#"><img src="/img/valorant.png" alt="logo valorant" /></a>
+        <a href="#"><img src="/img/fifa.png" alt="logo fifa" /></a>
+      </div>
+    </div>
+    <section class="ofertas">
+      <div class="container_grid">
+        <h2>Ofertas</h2>
+        <div id="secao_produtos" class="secao_cards"> <!--ultima linha alterada-->
+          <div class="card">
+            <img src="./img/imagegirl.png" alt="imagem de uma menina" />
+            <h3>Título do Jogo</h3>
+            <p>Descrição do Jogo</p>
+            <p>R$ 100,00</p>
+            <a href="#">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="./img/imagegirl.png" alt="imagem de uma menina" />
+            <h3>Título do Jogo</h3>
+            <p>Descrição do Jogo</p>
+            <p>R$ 100,00</p>
+            <a href="#">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="./img/imagegirl.png" alt="imagem de uma menina" />
+            <h3>Título do Jogo</h3>
+            <p>Descrição do Jogo</p>
+            <p>R$ 100,00</p>
+            <a href="#">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="./img/imagegirl.png" alt="imagem de uma menina" />
+            <h3>Título do Jogo</h3>
+            <p>Descrição do Jogo</p>
+            <p>R$ 100,00</p>
+            <a href="#">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="./img/imagegirl.png" alt="imagem de uma menina" />
+            <h3>Título do Jogo</h3>
+            <p>Descrição do Jogo</p>
+            <p>R$ 100,00</p>
+            <a href="#">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="./img/imagegirl.png" alt="imagem de uma menina" />
+            <h3>Título do Jogo</h3>
+            <p>Descrição do Jogo</p>
+            <p>R$ 100,00</p>
+            <a href="#">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="./img/imagegirl.png" alt="imagem de uma menina" />
+            <h3>Título do Jogo</h3>
+            <p>Descrição do Jogo</p>
+            <p>R$ 100,00</p>
+            <a href="#">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="./img/imagegirl.png" alt="imagem de uma menina" />
+            <h3>Título do Jogo</h3>
+            <p>Descrição do Jogo</p>
+            <p>R$ 100,00</p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="banner_bottom">
+        <div class="black_background">
+          <div class="alinhamento_banner_bottom container_grid">
+            <div class="text_banner_bottom">
+              <span>Como participar das ligas ?</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat soluta voluptatem illo magnam cupiditate ducimus
+                placeat, excepturi ex dolore dolor? Magnam magni sequi natus
+                reprehenderit sed omnis minima similique eligendi. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit.
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam qui ut, architecto ea voluptas alias soluta, eveniet
+                aspernatur mollitia sapiente beatae quam veniam nobis magni
+                tempora est in odit libero!
+              </p>
+            </div>
+            <img
+              class="banner_bottom_image"
+              src="./img/image_bottom.png"
+              alt="Imagem de um herói"
+            />
+          </div>
+          <p class="leia_mais container_grid"><a href="#">Leia mais...</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container_grid rodape">
+        <div class="links_footer">
+          <div class="alinhamento_footer_links">
+            <h2>Links Úteis</h2>
+            <ul>
+              <li><a href="#">Regras de utilização</a></li>
+              <li><a href="#">Suporte</a></li>
+              <li><a href="#">Central de ajuda</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+          <div class="alinhamento_footer_links">
+            <h2>Páginas</h2>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Campeonatos</a></li>
+              <li><a href="#">Resultados</a></li>
+              <li><a href="#">Notícias</a></li>
+              <li><a href="#">Login/Cadastro</a></li>
+            </ul>
+          </div>
+        </div>
+        <img class="logo" src="./img/e_playerslogo.png" alt="Logo do site E-players" />
+        <div class="info_contato">
+          <p>Faça parte do nosso clan, assine nosso newsletter!</p>
+          <form class="form">
+            <label  >E-mail</label>
+              <input type="email" placeholder="E-mail" required/>
+              <button>Cadastrar</button>
+          </form>
+          <div class="siganos container_grid">
+            <h2>Siga-nos em: </h2>
+            <div class="siganos_link">
+              <a href="#"><img src="./img/instagram.png" alt="logo do instagram"></a>
+              <a href="#"><img src="./img/facebook.png" alt="logo fo facebook"></a>
+              <a href="#"><img src="./img/youtube.png" alt="logo do youtube"></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
