@@ -1,4 +1,4 @@
-let menu = document.getElementById("menu");
+let menu = document.getElementById('menu')
 
 /*function mostrarMenu() {
   if (window.getComputedStyle(menu).display != 'flex') {
@@ -10,72 +10,72 @@ let menu = document.getElementById("menu");
 }*/
 
 function mostrarMenu() {
-  $(".menu").toggle();
-  event.preventDefault();
+  $('.menu').toggle()
+  event.preventDefault()
 }
 
 function renderizarProdutos() {
-  let secaoProdutos = document.getElementById("secao_produtos");
+  let secaoProdutos = document.getElementById('secao_produtos')
 
   let listaProdutos = [
     {
-      nome: "Mouse Gamer RGB",
-      imagem: "./img/imagegirl.png",
-      descrição: "Esse mouse tem 10.000 dpi",
-      preco: 159.9,
+      nome: 'Mouse Gamer RGB',
+      imagem: './img/imagegirl.png',
+      descrição: 'Esse mouse tem 10.000 dpi',
+      preco: 159.9
     },
 
     {
-      nome: "Teclado Gamer RGB",
-      imagem: "./img/imagegirl.png",
-      descrição: "Esse teclado possui Switches Blue",
-      preco: 229.9,
+      nome: 'Teclado Gamer RGB',
+      imagem: './img/imagegirl.png',
+      descrição: 'Esse teclado possui Switches Blue',
+      preco: 229.9
     },
 
     {
-      nome: "Headset Gamer RGB",
-      imagem: "./img/imagegirl.png",
-      descrição: "Esse teclado possui microfone integrado",
-      preco: 199.99,
+      nome: 'Headset Gamer RGB',
+      imagem: './img/imagegirl.png',
+      descrição: 'Esse teclado possui microfone integrado',
+      preco: 199.99
     },
 
     {
-      nome: "Mousepad Gamer RGB",
-      imagem: "./img/imagegirl.png",
-      descrição: "Esse mousepad é top e possui leds na laterais",
-      preco: 159.79,
+      nome: 'Mousepad Gamer RGB',
+      imagem: './img/imagegirl.png',
+      descrição: 'Esse mousepad é top e possui leds na laterais',
+      preco: 159.79
     },
 
     {
-      nome: "Mousepad Gamer RGB",
-      imagem: "./img/imagegirl.png",
-      descrição: "Esse mousepad é top e possui leds na laterais",
-      preco: 159.79,
+      nome: 'Mousepad Gamer RGB',
+      imagem: './img/imagegirl.png',
+      descrição: 'Esse mousepad é top e possui leds na laterais',
+      preco: 159.79
     },
 
     {
-      nome: "Mousepad Gamer RGB",
-      imagem: "./img/imagegirl.png",
-      descrição: "Esse mousepad é top e possui leds na laterais",
-      preco: 159.79,
+      nome: 'Mousepad Gamer RGB',
+      imagem: './img/imagegirl.png',
+      descrição: 'Esse mousepad é top e possui leds na laterais',
+      preco: 159.79
     },
 
     {
-      nome: "Mousepad Gamer RGB",
-      imagem: "./img/imagegirl.png",
-      descrição: "Esse mousepad é top e possui leds na laterais",
-      preco: 159.79,
+      nome: 'Mousepad Gamer RGB',
+      imagem: './img/imagegirl.png',
+      descrição: 'Esse mousepad é top e possui leds na laterais',
+      preco: 159.79
     },
 
     {
-      nome: "Mousepad Gamer RGB",
-      imagem: "./img/imagegirl.png",
-      descrição: "Esse mousepad é top e possui leds na laterais",
-      preco: 159.79,
-    },
-  ];
+      nome: 'Mousepad Gamer RGB',
+      imagem: './img/imagegirl.png',
+      descrição: 'Esse mousepad é top e possui leds na laterais',
+      preco: 159.79
+    }
+  ]
 
-  let template = "";
+  let template = ''
 
   for (let index = 0; index < listaProdutos.length; index++) {
     template =
@@ -88,31 +88,32 @@ function renderizarProdutos() {
     <p>R$ ${listaProdutos[index].preco}</p>
     <a href="#">Comprar</a>
     </div>
-    `;
+    `
+    preventDefault()
   }
 
-  secaoProdutos.innerHTML = template;
+  secaoProdutos.innerHTML = template
 }
 
 $(document).ready(function () {
-  let listaSlides = ["banner_f1", "banner_tlou", "banner_lol"];
-  let slideAtual = 0;
+  let listaSlides = ['banner_f1', 'banner_tlou', 'banner_lol']
+  let slideAtual = 0
 
   function mudarSlide() {
     if (slideAtual > 0) {
-      $(".banner").removeClass(listaSlides[slideAtual - 1]);
+      $('.banner').removeClass(listaSlides[slideAtual - 1])
     } else {
-      $(".banner").removeClass(listaSlides[listaSlides.length - 1]);
+      $('.banner').removeClass(listaSlides[listaSlides.length - 1])
     }
 
-    $(".banner").addClass(listaSlides[slideAtual]);
+    $('.banner').addClass(listaSlides[slideAtual])
 
-    slideAtual++;
+    slideAtual++
 
     if (slideAtual > listaSlides.length - 1) {
-      slideAtual = 0;
+      slideAtual = 0
     }
   }
 
-  setInterval(mudarSlide, 2000);
-});
+  setInterval(mudarSlide, 2000)
+})
