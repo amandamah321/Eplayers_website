@@ -187,7 +187,7 @@ h2 {
 /* -------------------------------------------------Banner down---------------------------------------------*/
 
 .banner_bottom {
-    background-image: url(/img/bannerdown.png);
+    background-image: url(./img/bannerdown.png);
     background-size: cover;
     color: rgba(255, 255, 255, 1);
     font-family: 'Roboto', sans-serif;
@@ -196,7 +196,7 @@ h2 {
 }
 
 .black_background {
-    background-image: url(/img/black_background.png);
+    background-image: url(./img/black_background.png);
     background-size: cover;
     height: 500px;
 }
